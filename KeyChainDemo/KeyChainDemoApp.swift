@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct KeyChainDemoApp: App {
+    @AppStorage("isUserLogged") var logged = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if logged {
+                Text("User is Logged")
+            } else {
+                ContentView()                
+            }
         }
     }
 }

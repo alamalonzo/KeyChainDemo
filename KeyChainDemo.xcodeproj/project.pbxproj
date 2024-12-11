@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		426B789B2D08ADC400D4837D /* KeyChainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyChainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		42542C7F2D09F40800801574 /* configAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42542C7E2D09F40800801574 /* configAPI.plist */; };
+		42542C812D09F4C000801574 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542C802D09F4C000801574 /* AppConfig.swift */; };
+		42542C842D09FD2D00801574 /* RepositoryDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542C832D09FD2D00801574 /* RepositoryDemo.swift */; };
+		426B78B22D08ADD500D4837D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426B78AC2D08ADD500D4837D /* Preview Assets.xcassets */; };
+		426B78B32D08ADD500D4837D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426B78AE2D08ADD500D4837D /* Assets.xcassets */; };
+		426B78B42D08ADD500D4837D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B78AF2D08ADD500D4837D /* ContentView.swift */; };
+		426B78B52D08ADD500D4837D /* KeyChainDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B78B02D08ADD500D4837D /* KeyChainDemoApp.swift */; };
+		426B78B72D08AE1C00D4837D /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B78B62D08AE1C00D4837D /* KeyChainManager.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		426B789D2D08ADC400D4837D /* KeyChainDemo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KeyChainDemo;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		42542C7E2D09F40800801574 /* configAPI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = configAPI.plist; sourceTree = "<group>"; };
+		42542C802D09F4C000801574 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		42542C832D09FD2D00801574 /* RepositoryDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDemo.swift; sourceTree = "<group>"; };
+		426B789B2D08ADC400D4837D /* KeyChainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyChainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		426B78AC2D08ADD500D4837D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		426B78AE2D08ADD500D4837D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		426B78AF2D08ADD500D4837D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		426B78B02D08ADD500D4837D /* KeyChainDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainDemoApp.swift; sourceTree = "<group>"; };
+		426B78B62D08AE1C00D4837D /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		426B78982D08ADC400D4837D /* Frameworks */ = {
@@ -29,10 +40,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42542C7D2D09F3DC00801574 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				42542C7E2D09F40800801574 /* configAPI.plist */,
+				42542C802D09F4C000801574 /* AppConfig.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		42542C822D09FD1E00801574 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				42542C832D09FD2D00801574 /* RepositoryDemo.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		426B78922D08ADC400D4837D = {
 			isa = PBXGroup;
 			children = (
-				426B789D2D08ADC400D4837D /* KeyChainDemo */,
+				426B78B12D08ADD500D4837D /* KeyChainDemo */,
 				426B789C2D08ADC400D4837D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +71,36 @@
 				426B789B2D08ADC400D4837D /* KeyChainDemo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		426B78AD2D08ADD500D4837D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				426B78AC2D08ADD500D4837D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		426B78B12D08ADD500D4837D /* KeyChainDemo */ = {
+			isa = PBXGroup;
+			children = (
+				42542C822D09FD1E00801574 /* Repository */,
+				426B78B82D08AE2400D4837D /* Helpers */,
+				42542C7D2D09F3DC00801574 /* System */,
+				426B78AD2D08ADD500D4837D /* Preview Content */,
+				426B78AE2D08ADD500D4837D /* Assets.xcassets */,
+				426B78AF2D08ADD500D4837D /* ContentView.swift */,
+				426B78B02D08ADD500D4837D /* KeyChainDemoApp.swift */,
+			);
+			path = KeyChainDemo;
+			sourceTree = "<group>";
+		};
+		426B78B82D08AE2400D4837D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				426B78B62D08AE1C00D4837D /* KeyChainManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +117,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				426B789D2D08ADC400D4837D /* KeyChainDemo */,
 			);
 			name = KeyChainDemo;
 			packageProductDependencies = (
@@ -109,6 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42542C7F2D09F40800801574 /* configAPI.plist in Resources */,
+				426B78B22D08ADD500D4837D /* Preview Assets.xcassets in Resources */,
+				426B78B32D08ADD500D4837D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426B78B42D08ADD500D4837D /* ContentView.swift in Sources */,
+				42542C812D09F4C000801574 /* AppConfig.swift in Sources */,
+				42542C842D09FD2D00801574 /* RepositoryDemo.swift in Sources */,
+				426B78B72D08AE1C00D4837D /* KeyChainManager.swift in Sources */,
+				426B78B52D08ADD500D4837D /* KeyChainDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +248,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -240,6 +304,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -268,7 +333,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamalonzo.KeyChainDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -297,7 +363,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamalonzo.KeyChainDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
